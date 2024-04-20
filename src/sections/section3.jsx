@@ -10,10 +10,33 @@ import antivirus from '../assets/images/antivirus_bubble.webp';
 import pccle from '../assets/images/download-2.svg';
 import arrowRight from '../assets/images/download-3.svg';
 
+import { useState } from 'react';
+import { useEffect } from 'react';
+
 
 export default function Section3() {
+
+    const [isVisible, setIsVisible] = useState(false);
+    const listenToScroll = () => {
+        let heightToHideFrom = 600;
+        const winScroll = document.body.scrollTop ||
+            document.documentElement.scrollTop;
+
+        if (winScroll > heightToHideFrom) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", listenToScroll);
+        return () =>
+            window.removeEventListener("scroll", listenToScroll);
+    }, [])
+
     return (
-        <div id="__next" data-reactroot="">
+        <div>
             <section className="py-12 lg:py-[100px] bg-black py-8 relative">
                 <img src={circle} alt="circles" className="absolute top-0 h-auto w-[70%]" />
                 <div className="w-full max-w-7xl mx-auto px-6 md:px-4  md:flex relative py-6">
@@ -66,7 +89,7 @@ export default function Section3() {
                         </div>
                         <div className="flex-[50%] flex flex-col">
                             <p className="font-medium text-base text-white leading-[18px] md:text-2xl"> Super secure. Because we care about your money.</p>
-                            <p className="text-sm text-gray-4 mt-2 md:text-lg"><span><img style={{marginTop: 24 + 'px'}} src={pccle} alt="PCI Logo" /></span></p>
+                            <p className="text-sm text-gray-4 mt-2 md:text-lg"><span><img style={{ marginTop: 24 + 'px' }} src={pccle} alt="PCI Logo" /></span></p>
                         </div>
                     </div>
                 </div>
@@ -85,7 +108,7 @@ export default function Section3() {
                     <div className="flex flex-col transition-all ease-in"><button className="p-4 rounded-lg z-10 flex justify-between items-center bg-[#FDEF78] text-black -mt-2 disabled:bg-[#AEAB8C]"><span>Apply now</span><img src={arrowRight} alt="right_arrow" width="21px" className="inline ml-3" /></button></div>
                 </div>
             </div>
-            <div style={{opacity: 1}}>
+            <div style={{ opacity: isVisible ? 1 : 0, transition: 'all 300ms ease' }}>
                 <section className="hidden sm:block fixed bottom-0 w-screen bg-white py-5 z-10">
                     <div className="mx-auto max-w-7xl px-12 w-full flex justify-between">
                         <div className="flex justify-between items-center block w-full">
@@ -96,17 +119,7 @@ export default function Section3() {
                                         <button type="submit" className="text-center text-sm leading-7 justify-between pt-2 ml-2 bg-[#FDEF78] rounded-xl z-10 py-2 px-4 disabled:opacity-80 disabled:cursor-not-allowed"><span>Apply Now</span></button>
                                     </div>
                                 </form>
-                                <div className="consent flex items-center py-4 px-2 max-w-xs"><input type="checkbox" id="consent-msg" defaultChecked={true} /><label for="consent-msg" className="consent text-white md:text-black text-[10px] leading-3 cursor-pointer">You agree to be contacted by Uni Cards over Call, SMS, Email or WhatsApp to guide you through your application.</label></div>
-                            </div>
-                        </div>
-                        <div className="flex hidden w-full flex-row items-center justify-between">
-                            <div className="w-full max-w-[300px]">
-                                <a href="/" target="_blank" rel="noopener noreferrer" className="block google-btn-2 font-medium p-4 rounded-lg z-10 bg-[#FDEF78] text-black -mt-2 disabled:bg-[#AEAB8C]">
-                                    <div className="w-full flex justify-center items-center"><span>Download</span></div>
-                                </a>
-                            </div>
-                            <div className="my-2">
-                                <p className="text-white md:text-black text-[10px] leading-3">Thank you for your interest in the Uni Card.<br /> Download the Uni Cards app now and get your Uni Card in minutes.</p>
+                                <div className="flex items-center py-4 px-2 max-w-xs"><input type="checkbox" id="consent-msg" defaultChecked={true} /><label htmlFor="consent-msg" className="text-white md:text-black text-[10px] leading-3 cursor-pointer">You agree to be contacted by Uni Cards over Call, SMS, Email or WhatsApp to guide you through your application.</label></div>
                             </div>
                         </div>
                     </div>

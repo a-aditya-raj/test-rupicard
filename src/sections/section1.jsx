@@ -25,9 +25,9 @@ export default function Section1() {
                                             <button type="submit" className="text-center text-sm leading-7 justify-between pt-2 ml-2 bg-[#FDEF78] rounded-xl z-10 py-2 px-4 disabled:opacity-80 disabled:cursor-not-allowed"><span>Apply Now</span></button>
                                         </div>
                                     </form>
-                                    <div className="consent flex items-center py-4 px-2 max-w-xs">
+                                    <div className="flex items-center py-4 px-2 max-w-xs">
                                         <input type="checkbox" defaultChecked={true} id="consent-msg" />
-                                        <label htmlFor="consent-msg" className="consent text-white md:text-black text-[10px] leading-3 cursor-pointer">You agree to be contacted by Uni Cards over Call, SMS, Email or WhatsApp to guide you through your application.</label>
+                                        <label htmlFor="consent-msg" className="text-white md:text-black text-[10px] leading-3 cursor-pointer">You agree to be contacted by Uni Cards over Call, SMS, Email or WhatsApp to guide you through your application.</label>
                                     </div>
                                 </div>
                             </div>
