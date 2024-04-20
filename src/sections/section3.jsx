@@ -7,6 +7,10 @@ import whatsapp from '../assets/images/whatsapp_bubble.webp';
 import rupee from '../assets/images/rupee_bubble.webp';
 import antivirus from '../assets/images/antivirus_bubble.webp';
 
+import pccle from '../assets/images/download-2.svg';
+import arrowRight from '../assets/images/download-3.svg';
+
+
 export default function Section3() {
     return (
         <div id="__next" data-reactroot="">
@@ -62,7 +66,7 @@ export default function Section3() {
                         </div>
                         <div className="flex-[50%] flex flex-col">
                             <p className="font-medium text-base text-white leading-[18px] md:text-2xl"> Super secure. Because we care about your money.</p>
-                            <p className="text-sm text-gray-4 mt-2 md:text-lg"><span><img style={{marginTop: 24 + 'px'}} src="/images/pcidss_cert.svg" alt="PCI Logo" /></span></p>
+                            <p className="text-sm text-gray-4 mt-2 md:text-lg"><span><img style={{marginTop: 24 + 'px'}} src={pccle} alt="PCI Logo" /></span></p>
                         </div>
                     </div>
                 </div>
@@ -78,7 +82,7 @@ export default function Section3() {
             </section>
             <div className="w-full bottom-0 z-40 fixed md:hidden py-8">
                 <div className="w-[90vw] mx-auto md:mx-0 md:max-w-[280px] font-medium">
-                    <div className="flex flex-col transition-all ease-in"><button className="p-4 rounded-lg z-10 flex justify-between items-center bg-[#FDEF78] text-black -mt-2 disabled:bg-[#AEAB8C]"><span>Apply now</span><img src="/images/right_arrow.svg" alt="right_arrow" width="21px" className="inline ml-3" /></button></div>
+                    <div className="flex flex-col transition-all ease-in"><button className="p-4 rounded-lg z-10 flex justify-between items-center bg-[#FDEF78] text-black -mt-2 disabled:bg-[#AEAB8C]"><span>Apply now</span><img src={arrowRight} alt="right_arrow" width="21px" className="inline ml-3" /></button></div>
                 </div>
             </div>
             <div style={{opacity: 1}}>
