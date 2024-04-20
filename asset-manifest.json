@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/test-rupicard/static/css/main.f04bdb80.css",
+    "main.js": "/test-rupicard/static/js/main.91011f2a.js",
+    "static/js/453.c5932eb1.chunk.js": "/test-rupicard/static/js/453.c5932eb1.chunk.js",
+    "static/media/download-4.png": "/test-rupicard/static/media/download-4.da65c337081dfdbfb013.png",
+    "static/media/download-2.png": "/test-rupicard/static/media/download-2.e4ecda231b6c8bb6d232.png",
+    "static/media/download-3.png": "/test-rupicard/static/media/download-3.ce7251618b44f3d32470.png",
+    "static/media/download.png": "/test-rupicard/static/media/download.003d0673f38ec15432b2.png",
+    "static/media/app_screen_2.webp": "/test-rupicard/static/media/app_screen_2.813a82ed9be77b15fdc7.webp",
+    "static/media/app_screen_1.webp": "/test-rupicard/static/media/app_screen_1.1f389970e0097ae50cac.webp",
+    "static/media/download-1.png": "/test-rupicard/static/media/download-1.461893053e8c72652c40.png",
+    "static/media/download.svg": "/test-rupicard/static/media/download.feef66f04e21263ecba66ff74ad4482a.svg",
+    "static/media/whatsapp_bubble.webp": "/test-rupicard/static/media/whatsapp_bubble.f4d0a6bc8a0ccf38e082.webp",
+    "static/media/antivirus_bubble.webp": "/test-rupicard/static/media/antivirus_bubble.765bbf6df221404e7d62.webp",
+    "static/media/rupee_bubble.webp": "/test-rupicard/static/media/rupee_bubble.c12c2e94918813cb8e88.webp",
+    "index.html": "/test-rupicard/index.html",
+    "static/media/download-1.svg": "/test-rupicard/static/media/download-1.38cbd8d85f15e52b0903aac5aa46c1fc.svg",
+    "main.f04bdb80.css.map": "/test-rupicard/static/css/main.f04bdb80.css.map",
+    "main.91011f2a.js.map": "/test-rupicard/static/js/main.91011f2a.js.map",
+    "453.c5932eb1.chunk.js.map": "/test-rupicard/static/js/453.c5932eb1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f04bdb80.css",
+    "static/js/main.91011f2a.js"
+  ]
+}
